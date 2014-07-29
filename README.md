@@ -9,7 +9,7 @@ HighCharts provide a default aniamation when using pie charts. The data plot can
 
 ```html
 point: {
-	events: {
+	events: {git 
 	    click: function(){
 	        
 	    },
@@ -40,9 +40,6 @@ point: {
 	            translateY: 0
 	        };
 	    
-	        
-
-
 	        var dlTranslation = {
 	            translateX: this.dataLabel.translateX - translation.translateX,
 	            translateY: this.dataLabel.translateY - translation.translateY
@@ -60,3 +57,8 @@ point: {
 }
 
 ```
+
+
+see demo[<a href="http://codepen.io/Jack_Pu/pen/sywfJ">Codepen</a>]
+
+see <a href="https://github.com/JackPu/Highcharts-Learning/blob/master/js/pie-charts-aniamtion.html">files</a>
