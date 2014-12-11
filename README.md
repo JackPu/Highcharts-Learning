@@ -61,4 +61,4 @@ point: {
 
 see demo[<a href="http://codepen.io/Jack_Pu/pen/sywfJ">Codepen</a>]
 
-see <a href="https://github.com/JackPu/Highcharts-Learning/blob/master/js/pie-charts-aniamtion.html">files</a>
+
