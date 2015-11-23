@@ -61,4 +61,17 @@ point: {
 
 see demo[<a href="http://codepen.io/Jack_Pu/pen/sywfJ">Codepen</a>]
 
+### hide highchart logo 
+
+Hiding highchart.com logo is so easy !
+
+``` javascript 
+  // add this configuration
+  credits: {
+      enabled: false
+  }
+
+```
+
+
 
