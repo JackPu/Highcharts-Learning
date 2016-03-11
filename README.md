@@ -73,5 +73,40 @@ Hiding highchart.com logo is so easy !
 
 ```
 
+### set maxPointWidth
+
+You can Set max width of  coloums chart by using these code.
+``` javascript
+ (function(H) {
+     var each = H.each;
+     H.wrap(H.seriesTypes.column.prototype, 'drawPoints', function(proceed) {
+         var series = this;
+         if (series.data.length > 0) {
+             var width = series.barW > series.options.maxPointWidth ? series.options.maxPointWidth : series.barW;
+             each(this.data, function(point) {
+                 point.shapeArgs.x += (point.shapeArgs.width - width) / 2;
+                 point.shapeArgs.width = width;
+             });
+         }
+         proceed.call(this);
+     })
+ })(Highcharts);
+```
+
+Then you can set your highcharts `series` options:
+
+``` javascript
+series: [{  
+  // ....
+    data: data['series']['stars'],
+    tooltip: {
+        valueSuffix: ' 颗'
+    },
+    maxPointWidth: 30,  //  最大宽度 采用svg宽度
+
+}]
+```
+
+
 
 
